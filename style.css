@@ -90,13 +90,26 @@
 }
 
 
+body .brown-block:nth-child(1) {
+
+}
+body .brown-block:nth-child(2) {
+	
+}
 #jump-nav {
 	height: 36px;
 	padding: 0 60px;
 }
-#jump-nav .medium-5 {
+
+#jump-nav .left-nav {
+	width:40%;
 	margin: 5px 0;
 }
+
+#jump-nav .right-nav {
+	width:50%;
+}
+
 #hamburger-expand-menu {
 	height: 26px;
 }
@@ -110,30 +123,68 @@
 	color: #fff;
 	margin: 0;
 	font-family: "Antenna";
+	font-weight: 200;
 
 }
-#jump-nav dd {
+#jump-nav .sub-nav dd {
 	width:20%;
-	margin:0;
+	margin:0 !important;
 	padding: 0;
 }
 
-#jump-nav dd img {
+
+#jump-nav .sub-nav dd img {
 	width:80%;
 	margin: 0 10%;
+	margin-top: -130px;
 	display: none;
+}
+#jump-nav .sub-nav dd:hover img {
+	margin-top: 0px;
+	display: inline;
 }
 
 #jump-nav dd p {
 	font-family: "Antenna";
 	text-align: center;
-	padding:5px 0;
+	padding-top: 7px;
+	padding-bottom: 5px;
 	margin:0;
+	font-size: 15px;
+}
+body .brown-block:nth-child(2) .sub-nav dd p {
+	opacity: 0;
+}
+
+body .brown-block:nth-child(2) .sub-nav dd.active p {
+	opacity:1;
+}
+
+body .brown-block:nth-child(2) .sub-nav dd:hover p {
+	opacity:1;
+}
+
+.sub-nav dd.active a:hover {
+	background-color: inherit;
 }
 
 #jump-nav dd a {
 	color: #fff;
 }
+
+.sub-nav dd.active a {
+	background-color: inherit;
+}
+
+.sub-nav dd.active a:hover {
+	background-color: inherit;
+}
+
+.sub-nav dd a,
+.sub-nav dd.active a {
+	padding:0;
+}
+
 
 
 
