@@ -89,21 +89,34 @@
 	color: #4b3a22;
 }
 
+.white-block {
+	background-color: #fff;
+	color:#000;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.fixed {
+	position: fixed;
+}
 
 body .brown-block:nth-child(1) {
-
 }
 body .brown-block:nth-child(2) {
-	
 }
+
+
 #jump-nav {
 	height: 36px;
-	padding: 0 60px;
+	padding: 0 10px;
+
 }
 
 #jump-nav .left-nav {
 	width:40%;
-	margin: 5px 0;
+	margin: 5px 0 0 0;
 }
 
 #jump-nav .right-nav {
@@ -112,57 +125,72 @@ body .brown-block:nth-child(2) {
 
 #hamburger-expand-menu {
 	height: 26px;
+	margin-left: 40px;
 }
 
 #chronicle-masthead {
 	height: 26px;
 	margin: 0 20px;
+	width: 192px;
+	background-image: url("img/icons/Chronicle_Full.svg");
+	background-size: cover;
 }
 #jump-nav h4 {
-	font-size: 20px;
+	font-size: 18px;
 	color: #fff;
 	margin: 0;
-	font-family: "Antenna";
+	margin-left:40px;
+	font-family: "AntennaLight";
 	font-weight: 200;
+}
 
+#jump-nav h4 a {
+	color: #fff;
+}
+#jump-nav h4 a:hover {
+	color: #fff;
 }
 #jump-nav .sub-nav dd {
 	width:20%;
 	margin:0 !important;
 	padding: 0;
+	opacity: .6;
+}
+.intro #jump-nav .sub-nav dd {
+	opacity: 1;
+}
+#jump-nav .sub-nav dd:hover {
+	opacity: 1;
+}
+#jump-nav .sub-nav dd.active {
+	opacity: 1;
 }
 
-
-#jump-nav .sub-nav dd img {
+.sub-nav dd img {
 	width:80%;
 	margin: 0 10%;
 	margin-top: -130px;
 	display: none;
 }
-#jump-nav .sub-nav dd:hover img {
+
+.intro #jump-nav .sub-nav dd img {
+	margin-top: 0px;
+	display: inline;
+}
+.sub-nav dd:hover img {
 	margin-top: 0px;
 	display: inline;
 }
 
 #jump-nav dd p {
-	font-family: "Antenna";
+	font-family: "AntennaLight";
 	text-align: center;
 	padding-top: 7px;
 	padding-bottom: 5px;
 	margin:0;
 	font-size: 15px;
 }
-body .brown-block:nth-child(2) .sub-nav dd p {
-	opacity: 0;
-}
 
-body .brown-block:nth-child(2) .sub-nav dd.active p {
-	opacity:1;
-}
-
-body .brown-block:nth-child(2) .sub-nav dd:hover p {
-	opacity:1;
-}
 
 .sub-nav dd.active a:hover {
 	background-color: inherit;
@@ -183,6 +211,269 @@ body .brown-block:nth-child(2) .sub-nav dd:hover p {
 .sub-nav dd a,
 .sub-nav dd.active a {
 	padding:0;
+}
+
+.social {
+	height:20px;
+	float:left;
+	margin:10px 0;
+	margin-left:20px;
+}
+#facebook-m,
+#twitter-m {
+	display: none;
+	float:right;
+	margin: 5px 0;
+	margin-left:20px;
+}
+
+#facebook-m {
+	margin-right:30px;
+}
+
+#facebook,
+#twitter {
+	display: inline-block;
+}
+
+.breadcrumb-m {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1340px) {
+	#jump-nav h4 {
+		margin-left:10px;
+	}
+
+	#facebook,
+	#twitter {
+		margin-left:15px;
+	}
+}
+@media screen and (max-width: 1260px) {
+	#chronicle-masthead {
+		width: 25px;
+		margin: 0 7px;
+		background-image: url("img/icons/Chronicle_C.svg");
+	}	
+	#jump-nav .left-nav {
+		width:30%;
+	}
+
+	#jump-nav .right-nav {
+		width:60%;
+	}
+	.sub-nav dd img {
+		width:70%;
+		margin: 0 15%;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	#jump-nav {
+		padding: 0 10%;
+	}
+	#jump-nav .left-nav {
+		width:100%;
+	}
+
+	#jump-nav .right-nav {
+		width:100%;
+	}
+	#facebook-m,
+	#twitter-m {
+		display: inline-block;
+	}
+
+	#facebook,
+	#twitter {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#jump-nav {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#jump-nav .left-nav {
+		width: 80%;
+	}
+
+	#jump-nav .right-nav {
+		width: 20%;
+		position: fixed;
+		right: 0;
+	}
+	#jump-nav .sub-nav dd {
+		float: right;
+		width: 100%;
+		height: 7.2px;
+	}
+
+	.intro #jump-nav .sub-nav .yellow-block {
+		width: 80%;
+	}
+	.intro #jump-nav .sub-nav .red-block {
+		width: 65%;
+	}
+	.intro #jump-nav .sub-nav .green-block {
+		width: 100%;
+	}
+	.intro #jump-nav .sub-nav .blue-block {
+		width: 45%;
+	}
+	.section #jump-nav .sub-nav dd {
+		width: 50%;
+		opacity: 1;
+	}
+
+	.intro #jump-nav .sub-nav dd img,
+	.section #jump-nav .sub-nav dd img {
+		display: none;
+		margin-top: 6px;
+	}
+	.intro #jump-nav .sub-nav dd p,
+	.section #jump-nav .sub-nav dd p  {
+		opacity: 0;
+		font-size: 10px;
+	}
+	.intro #jump-nav .sub-nav:hover dd,
+	.section #jump-nav .sub-nav:hover dd {
+		height: inherit;
+		width: 100%;
+	}
+	#jump-nav .sub-nav:hover dd img {
+		display: inline;
+	}
+	#jump-nav .sub-nav:hover dd p  {
+		opacity: 1;
+	}
+	.breadcrumb-m {
+		display: block;
+		width: 50%;
+		float:left;
+		padding-bottom: 4px;
+	}
+	#jump-nav .sub-nav:hover .breadcrumb-m {
+		display: none;
+	}
+	.breadcrumb-m img {
+		height: 32px;
+		margin: 0 5px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.breadcrumb-m img {
+		margin: 0;
+	}
+}
+
+
+.section .content {
+	margin-top:100px;
+}
+.section .headline {
+	font-family: "Antenna";
+	font-size: 86px;
+	float: left;
+	margin-left: -12px;
+	z-index: -100;
+	position: relative;
+}
+
+.section .lifestyle-head .headline {
+	margin-left: 8px;
+	margin-top: 25px;
+}
+
+.section .tech-head .headline {
+	margin-left: 16px;
+}
+.section .transportation-head {
+	width:110%;
+}
+.section .transportation-head .headline {
+	font-size: 60px;
+	margin-left:5px;
+}
+.section .head-wrapper img {
+	float:left;
+	z-index:100;
+	position: relative;
+}
+.section .food-head img {
+	height: 100px;
+	margin-top: 3px;
+}
+
+.section .lifestyle-head img {
+	height: 150px;
+	margin-top: -31px;
+}
+
+.section .tech-head img {
+	height: 90px;
+	margin-top: 11px;
+}
+
+.section .transportation-head img {
+	height: 75px;
+	margin-top: 0;
+}
+
+.section .content .text {
+
+}
+
+@media screen and (max-width: 751px) {
+	.section .transportation-head .headline {
+		font-size: 54px;
+	}
+	.section .transportation-head img {
+		height: 66px;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section .headline {
+		font-size: 60px;
+	}
+	.section .transportation-head img {
+		display: none;
+	}
+	.section .food-head .headline {
+		margin-left:-9px;
+	}
+	.section .transportation-head .headline {
+		font-size: 40px
+	}
+	.section .food-head img {
+		height: 80px;
+		margin-top: -5px;
+	}
+
+	.section .lifestyle-head img {
+		height: 100px;
+		margin-top: -10px;
+	}
+
+	.section .tech-head img {
+		height: 90px;
+		margin-top: 11px;
+	}
+
+	.section .transportation-head img {
+		height: 75px;
+		margin-top: 25px;
+	}
+
 }
 
 
