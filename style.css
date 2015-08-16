@@ -404,7 +404,7 @@ body .brown-block:nth-child(2) {
 }
 .section .head-wrapper img {
 	float:left;
-	z-index:100;
+	z-index:-10;
 	position: relative;
 }
 .section .food-head img {
@@ -428,6 +428,7 @@ body .brown-block:nth-child(2) {
 }
 
 .section .content .text {
+	font-family: "FarnhamText"
 
 }
 
@@ -540,3 +541,97 @@ body .brown-block:nth-child(2) {
 	background-size: cover;
 }
 
+
+
+.m-scene .scene_element {
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadein {
+    animation-name: fadeIn;
+}
+
+.m-scene .scene_element--fadeinup {
+    animation-name: fadeInUp;
+}
+
+.m-scene .scene_element--fadeinright {
+    animation-name: fadeInRight;
+}
+
+  /** Reverse "exit" animations
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
+  }*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
