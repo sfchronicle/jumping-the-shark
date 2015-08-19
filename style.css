@@ -111,7 +111,9 @@ body .brown-block:nth-child(2) {
 #jump-nav {
 	height: 36px;
 	padding: 0 10px;
-
+	position: fixed;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.13);
+	border: 1px rgba(0, 0, 0, 0.13);
 }
 
 #jump-nav .left-nav {
@@ -154,7 +156,7 @@ body .brown-block:nth-child(2) {
 	width:20%;
 	margin:0 !important;
 	padding: 0;
-	opacity: .6;
+	opacity: .4;
 }
 .intro #jump-nav .sub-nav dd {
 	opacity: 1;
@@ -175,12 +177,9 @@ body .brown-block:nth-child(2) {
 
 .intro #jump-nav .sub-nav dd img {
 	margin-top: 0px;
-	display: inline;
+	display: none;
 }
-.sub-nav dd:hover img {
-	margin-top: 0px;
-	display: inline;
-}
+
 
 #jump-nav dd p {
 	font-family: "AntennaLight";
@@ -375,56 +374,92 @@ body .brown-block:nth-child(2) {
 }
 
 
+
+.intro .intro-image {
+	height: 420px;
+	padding-top:70px;
+	width:100%;
+	margin: 0;
+}
+
+ .head-wrapper {
+	width:100%;
+	height: 240px;
+	padding:40px 10%;
+	padding-top:70px;
+}
+
+.intro .content {
+	margin-top: 80px;
+}
+
 .section .content {
 	margin-top:100px;
 }
-.section .headline {
+
+.headline {
 	font-family: "Antenna";
 	font-size: 86px;
 	float: left;
-	margin-left: -12px;
-	z-index: -100;
+	margin-left: -14px;
 	position: relative;
+}
+
+
+ .real-estate-head .headline {
+	margin-left: -35px;
+	margin-top: 20px;
+}
+
+.section .food-head .headline {
+	margin-left: 5px;
+	margin-top: 20px;
 }
 
 .section .lifestyle-head .headline {
 	margin-left: 8px;
-	margin-top: 25px;
+	margin-top: 28px;
 }
 
 .section .tech-head .headline {
-	margin-left: 16px;
+	margin-left: -4px;
+	margin-top:10px;
 }
 .section .transportation-head {
 	width:110%;
 }
 .section .transportation-head .headline {
-	font-size: 60px;
+	font-size: 80px;
 	margin-left:5px;
+	margin-top: 20px;
 }
-.section .head-wrapper img {
+ .head-wrapper img {
 	float:left;
-	z-index:-10;
 	position: relative;
 }
+ .real-estate-head img {
+	height: 120px;
+	margin-left: -20px
+}
+
 .section .food-head img {
 	height: 100px;
-	margin-top: 3px;
+	margin-top: 20px;
 }
 
 .section .lifestyle-head img {
 	height: 150px;
-	margin-top: -31px;
+	margin-top: -20px;
 }
 
 .section .tech-head img {
-	height: 90px;
-	margin-top: 11px;
+	height: 86px;
+	margin-top: 24px;
 }
 
 .section .transportation-head img {
-	height: 75px;
-	margin-top: 0;
+	height: 94px;
+	margin-top: 26px;
 }
 
 .section .content .text {
@@ -544,7 +579,7 @@ body .brown-block:nth-child(2) {
 
 
 .m-scene .scene_element {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
 }
