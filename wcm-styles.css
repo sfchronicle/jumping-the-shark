@@ -1,44 +1,6 @@
-@font-face {
-	font-family:"AntennaLight";
-	src:url("fonts/Antenna/Antenna-Light.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
 
-@font-face {
-	font-family:"AntennaLightItalic";
-	src:url("fonts/Antenna/Antenna-LightItalic.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
-
-@font-face {
-	font-family:"Antenna";
-	src:url("fonts/Antenna/Antenna-Regular.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
-
-@font-face {
-	font-family:"AntennaItalic";
-	src:url("fonts/Antenna/Antenna-RegularItalic.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
-
-@font-face {
-	font-family:"AntennaBlack";
-	src:url("fonts/Antenna/Antenna-Black.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
-
-@font-face {
-	font-family:"FarnhamText";
-	src:url("fonts/Farnham/FarnhamText-Regular.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
-
-@font-face {
-	font-family:"FarnhamTextBold";
-	src:url("fonts/Farnham/FarnhamText-Bold.otf") format("opentype");
-	font-style:normal;
-	font-weight:normal}
+<style type="text/css">
 
 .float {
 	float: left;
@@ -102,7 +64,26 @@
 	position: fixed;
 }
 
+body .brown-block:nth-child(1) .sub-nav dd {
+	opacity: 1;
+}
+body .brown-block:nth-child(2) .sub-nav dd {
+	opacity: 1;
+}
 
+.article_page #content {
+margin: 0;
+}
+
+.zone-5 {
+       position: fixed;
+       top: 0;
+}
+
+.hdnce-item-43416 {
+       position: fixed;
+       top: 0;
+}
 
 #jump-nav {
 	height: 36px;
@@ -110,6 +91,7 @@
 	position: fixed;
 	box-shadow: 1px 1px rgba(0, 0, 0, 0.13);
 	border: 1px rgba(0, 0, 0, 0.13);
+       font-family: "Antenna", sans-serif;
 }
 
 #jump-nav .left-nav {
@@ -130,7 +112,7 @@
 	height: 26px;
 	margin: 0 20px;
 	width: 192px;
-	background-image: url("img/icons/Chronicle_Full.svg");
+	background-image: url("http://ww4.preprod.hdnux.com/photos/40/16/33/8447715/4/200x200.png");
 	background-size: cover;
 }
 #jump-nav h4 {
@@ -138,7 +120,7 @@
 	color: #fff;
 	margin: 0;
 	margin-left:40px;
-	font-family: "AntennaLight";
+        font-family: "Antenna", sans-serif;
 	font-weight: 200;
 }
 
@@ -148,7 +130,7 @@
 #jump-nav h4 a:hover {
 	color: #fff;
 }
-.brown-block .sub-nav dd {
+#jump-nav .sub-nav dd {
 	width:20%;
 	margin:0 !important;
 	padding: 0;
@@ -164,28 +146,10 @@
 	opacity: 1;
 }
 
-body .brown-block:nth-child(1) .sub-nav dd {
-	opacity: 1;
-}
-body .brown-block:nth-child(2) .sub-nav dd {
-	opacity: .4;
-}
-
-.sub-nav dd img {
-	width:80%;
-	margin: 0 10%;
-	margin-top: -130px;
-	display: none;
-}
-
-.intro #jump-nav .sub-nav dd img {
-	margin-top: 0px;
-	display: none;
-}
 
 
 #jump-nav dd p {
-	font-family: "AntennaLight";
+	font-family: "Antenna", sans-serif;
 	text-align: center;
 	padding-top: 7px;
 	padding-bottom: 5px;
@@ -258,7 +222,7 @@ body .brown-block:nth-child(2) .sub-nav dd {
 	#chronicle-masthead {
 		width: 25px;
 		margin: 0 7px;
-		background-image: url("img/icons/Chronicle_C.svg");
+		background-image: url("http://ww3.preprod.hdnux.com/photos/40/16/33/8447714/4/80x80_square.png");
 	}	
 	#jump-nav .left-nav {
 		width:30%;
@@ -376,7 +340,61 @@ body .brown-block:nth-child(2) .sub-nav dd {
 	}
 }
 
+.article-wrap {
+  width: 96%;
+  float: none;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
 
+.nav {
+  background: none;
+}
+
+#grp-nav {
+  position: absolute;
+  display: block;
+  left: 0;
+}
+
+#container {
+  background: white;
+}
+
+.share-mod {
+  display: none !important!;
+}
+
+#header {
+  display: block;
+  z-index: -2;
+  position: absolute;
+}
+.hnews {
+margin-top: 640px;
+}
+.article-body {
+  margin-top: 180px;
+}
+
+.social-links .left {
+  display: none;
+}
+
+.social-links .right {
+  display: none;
+}
+
+.article-share {
+  height: 2px;
+}
+.hdnce-item-43418 {
+     position:absolute;
+    top: 70px;
+   width: 100%;
+
+}
 
 .intro-image {
 	height: 420px;
@@ -395,14 +413,19 @@ body .brown-block:nth-child(2) .sub-nav dd {
 .intro {
 	margin-top: 80px;
 }
-
-.content {
-	margin-top: 50px;
+#container #content {
+width:100%;
 }
-
+#container #content .article-wrap {
+	margin-top: 50px;
+       width:100%;
+}
+#container #content .article_page .zone-1 {
+    width:100% !important;
+}
 .headline {
 	font-family: "Antenna";
-	font-size: 86px;
+	font-size: 56px;
 	float: left;
 	margin-left: -14px;
 	position: relative;
@@ -421,7 +444,7 @@ body .brown-block:nth-child(2) .sub-nav dd {
 
 .lifestyle-head .headline {
 	margin-left: 8px;
-	margin-top: 28px;
+	margin-top: 26px;
 }
 
 .tech-head .headline {
@@ -465,9 +488,9 @@ body .brown-block:nth-child(2) .sub-nav dd {
 	margin-top: 26px;
 }
 
-.content .text {
-	font-family: "FarnhamText";
-
+.hst-articletext .text {
+font-family: 'FarnhamText', serif;
+margin-top:60px;
 }
 
 @media screen and (max-width: 751px) {
@@ -514,162 +537,22 @@ body .brown-block:nth-child(2) .sub-nav dd {
 	}
 
 }
-
-
-
-
-.images {
-	width:100%;
-	margin:0;
-	padding:0;
+.hst-articleprinter {
+display:none;
 }
-
-.images .food {
-	width:25%;
-	margin:0;
-	padding:0;
-	float:left;
-	height:300px;
-}
-.lead {
-	background: url("img/fake/lead.jpg") no-repeat;
-	background-size: cover;
-	width:100%;
-	height:800px;
-}
-
-.food1 {
-	background: url("img/fake/food1.jpg") no-repeat;
-	background-size: cover;
-}
-
-.food2 {
-	background: url("img/fake/food2.gif") no-repeat;
-	background-size: cover;
-}
-
-.food3 {
-	background: url("img/fake/food3.jpg") no-repeat;
-	background-size: cover;
-}
-
-.food4 {
-	background: url("img/fake/food4.jpg") no-repeat;
-	background-size: cover;
-}
+</style>
 
 
-.lifestyle1 {
-	background: url("img/fake/lifestyle1.gif") no-repeat;
-	background-size: cover;
-}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.magellan.min.js"></script>
+    
+    <script>
+        console.log("initializing foundation");
+        $(document).foundation({
+          "magellan-expedition": {
+            offset_by_height: false
+          }
+        });
 
-.lifestyle2 {
-	background: url("img/fake/lifestyle2.jpg") no-repeat;
-	background-size: cover;
-}
-
-.lifestyle3 {
-	background: url("img/fake/lifestyle3.jpg") no-repeat;
-	background-size: cover;
-}
-
-.lifestyle4 {
-	background: url("img/fake/lifestyle4.jpg") no-repeat;
-	background-size: cover;
-}
-
-
-
-.m-scene .scene_element {
-    animation-duration: 1.5s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-}
-
-.m-scene .scene_element--fadein {
-    animation-name: fadeIn;
-}
-
-.m-scene .scene_element--fadeinup {
-    animation-name: fadeInUp;
-}
-
-.m-scene .scene_element--fadeinright {
-    animation-name: fadeInRight;
-}
-
-  /** Reverse "exit" animations
-  &.is-exiting {
-      .scene_element {
-        animation-direction: alternate-reverse;
-      }
-  }*/
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
+       
+    </script>
